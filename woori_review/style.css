@@ -1,0 +1,123 @@
+/*reset 각 태그들이 가지고 있는 스타일 옵션 초기화*/
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/*폰트*/
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*Header*/
+.wrapper {
+    /* border: 1px solid red; */
+    max-width: 800px;
+    width: 100%;
+    /*요소 중앙 정렬*/
+    margin: 0 auto;
+    margin-bottom: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+
+    /*상우하좌     margin: 10 20 30 40;*/
+}
+
+header {
+    /* font-family: 'Vina Sans', sans-serif; */
+    font-family: 'SBAggroB';
+    background: #333;
+    color: white;
+    border: 1px solid blue;
+    width: 100%;
+    padding: 1rem 0;
+    /**/
+}
+
+/**/
+header .wrapper {
+    display: flex;
+    /*자식태그들을 좌우로 정렬*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav li {
+    /* margin: 0 1em; */
+    margin-left: 1rem;
+}
+
+/*HERO 영역*/
+
+#hero {
+    background-image: url(images/hero.jpg);
+    height: 100vh;
+    display: flex;
+    /*viewp*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hero h1 {
+
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.hero-date {
+    border-top: 3px solid #333;
+    text-align: center;
+    margin: 30px 0;
+    padding: 30px 0;
+    font-size: 1.5rem;
+    border-bottom: 3px solid #333;
+}
+
+/*about 섹션*/
+#about {
+    /* background-image: url(images/computer.jpg); */
+    background-color: white;
+    background-repeat: none;
+    height: 100vh;
+}
+
+#about h2 {
+    text-align: center;
+    color: yellow;
+    font-size: 4rem;
+}
+
+#about img {
+    width: 100%;
+}
+
+/*news*/
+#news .news-date {
+    margin-right: 80px;
+}
+
+#news .underbar {
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+#news {}
